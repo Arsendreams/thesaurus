@@ -1,9 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thesaurus Feature</title>
     <style>
     body {
         font-family: 'Georgia', serif;
@@ -65,20 +62,14 @@
     }
 </style>
 
-<h1>Arsen Thesaurus</h1> <!-- Changed title -->
-<input type="text" id="word-input" placeholder="Enter a word" />
+</head><body><h1>Arsen Thesaurus</h1> <!-- Changed title -->
+<input type="text" id="word-input" placeholder="Enter a word">
 <button onclick="fetchThesaurus()">Search</button>
 
 <ul id="synonyms-list"></ul> <!-- List for synonyms -->
 
-</head>
-<body>
-    <h1>Thesaurus Feature</h1>
-    <input type="text" id="word-input" placeholder="Enter a word" />
-    <button onclick="fetchThesaurus()">Search</button>
 
-    <ul id="synonyms-list"></ul>
-
+    
     <!-- Include your JavaScript code -->
     <script>
         // Function to fetch synonyms from Datamuse API
@@ -114,5 +105,5 @@
                 });
         }
     </script>
-</body>
-</html>
+
+</body></html>
