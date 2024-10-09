@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thesaurus Feature</title>
     <style>
     body {
         font-family: 'Georgia', serif;
@@ -67,9 +70,15 @@
 <button onclick="fetchThesaurus()">Search</button>
 
 <ul id="synonyms-list"></ul> <!-- List for synonyms -->
+
 </head>
 <body>
-    
+    <h1>Thesaurus Feature</h1>
+    <input type="text" id="word-input" placeholder="Enter a word" />
+    <button onclick="fetchThesaurus()">Search</button>
+
+    <ul id="synonyms-list"></ul>
+
     <!-- Include your JavaScript code -->
     <script>
         // Function to fetch synonyms from Datamuse API
@@ -79,7 +88,7 @@
                 alert('Please enter a word.');
                 return;
             }
-            let url = https://api.datamuse.com/words?rel_syn=${word};
+            let url = `https://api.datamuse.com/words?rel_syn=${word}`;
 
             fetch(url)
                 .then(response => response.json())
